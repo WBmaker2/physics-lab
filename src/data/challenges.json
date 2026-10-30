@@ -1,0 +1,50 @@
+[
+  {
+    "id": "p-target12",
+    "bench": "projectile",
+    "title": "12m 표적 맞히기",
+    "desc": "착지점이 12m(±0.5m)에 들어오도록 2번 안에 맞히세요.",
+    "hint": "힌트: 이론식 R = v²·sin2θ/g 로 먼저 계산해 보고 발사하세요.",
+    "target": { "kind": "range", "value": 12, "tolerance": 0.5, "maxTries": 2 }
+  },
+  {
+    "id": "p-angle45",
+    "bench": "projectile",
+    "title": "45°가 최장 비거리임을 보이기",
+    "desc": "같은 속도로 30°·45°·60°를 발사해 기록표에 남기세요.",
+    "hint": "힌트: sin2θ가 1이 되는 각도는?",
+    "target": { "kind": "trials", "count": 3 }
+  },
+  {
+    "id": "o-period2",
+    "bench": "pendulum",
+    "title": "주기 2.0초 진자 만들기",
+    "desc": "측정 주기가 2.0s(±0.05s)가 되도록 실 길이를 조절하세요.",
+    "hint": "힌트: T = 2π√(L/g). L ≈ 1m부터 시작하세요.",
+    "target": { "kind": "period", "value": 2.0, "tolerance": 0.05 }
+  },
+  {
+    "id": "o-energy",
+    "bench": "pendulum",
+    "title": "에너지 전환 관찰하기",
+    "desc": "KE/PE 그래프에서 서로 오르내림이 바뀌는 모습을 확인하고 기록하세요.",
+    "hint": "힌트: 최고점에서는 PE가 최대, 최저점에서는 KE가 최대.",
+    "target": { "kind": "trials", "count": 1 }
+  },
+  {
+    "id": "w-stand3",
+    "bench": "waves",
+    "title": "마디 3개 정상파 만들기",
+    "desc": "정상파 보기에서 배음수 2(마디 3개)를 관측하고 기록하세요.",
+    "hint": "힌트: 배음수 n의 마디 수는 n+1개, 양 끝은 항상 마디.",
+    "target": { "kind": "nodes", "value": 3 }
+  },
+  {
+    "id": "w-interfere",
+    "bench": "waves",
+    "title": "보강·상쇄 간섭 찾기",
+    "desc": "간섭 보기에서 두 파원을 켜고 마루가 커지는 지점을 찾으세요.",
+    "hint": "힌트: 두 파원에서 같은 정수배 파장만큼 떨어진 곳은 보강 간섭.",
+    "target": { "kind": "trials", "count": 1 }
+  }
+]

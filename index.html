@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Physics Lab은 포물선·진자·용수철·파동을 변수 조작과 실시간 그래프로 실험하는 물리 수업 도구입니다."
+    />
+    <meta name="theme-color" content="#0a0f0c" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+    <title>Physics Lab — 가상 물리 실험실</title>
+    <style>
+      html, body { margin: 0; min-height: 100%; background: #0a0f0c; color: #e9f2ec; }
+      .boot { position: fixed; inset: 0; z-index: 100; display: grid; place-content: center; justify-items: center; gap: 10px; background: radial-gradient(circle at 50% 42%, #12241a 0%, #070c09 62%, #030604 100%); font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; }
+      .boot-title { margin: 0; font-size: 24px; font-weight: 800; }
+      .boot-sub { margin: 0; color: #93a89a; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="boot" class="boot" role="status" aria-live="polite">
+      <p class="boot-title">Physics Lab</p>
+      <p class="boot-sub">가상 물리 실험실을 준비하고 있습니다</p>
+    </div>
+    <noscript>
+      <div style="position: fixed; inset: 0; display: grid; place-content: center; padding: 24px">
+        Physics Lab을 사용하려면 브라우저에서 JavaScript를 허용해야 합니다.
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
